@@ -32,7 +32,8 @@
                           "activite activite activite activite"
                           "footer footer footer footer";
      }
-                              /* ===============================HEADER======================== */
+  /* Header */
+  
      .header {
      grid-area: header;
      }
@@ -46,6 +47,11 @@
       margin-left: 3.5%;
      }
 
+     li {
+          display: list-item;
+          text-align: -webkit-match-parent;
+      }
+
      /* CONTAINER DES LIENS DE LA NAV */
      
      .navbar__link{
@@ -56,7 +62,7 @@
      flex-wrap: wrap-reverse;
      font-weight: 400;
      font-size: 1.3rem;
-      padding-top: 20px;
+     padding-top: 20px;
      }
      
      /* TOUT LES LIENS DE LA NAV  */
@@ -88,8 +94,9 @@
      font-weight: bolder;
      color: #0065fc;
      }
-                    /* ===============================BOUTON DE RECHERCHE======================== */
-     
+    
+    /* Recherche */ 
+
      .bouton-recherche {
      grid-area: bouton;
      display: flex;
@@ -129,7 +136,8 @@
      .loupe{
      visibility: hidden;
      }
-                    /* ===============================RECHERCHE PAR FILTRES======================== */
+
+/* Filtres */ 
      .filter {
      grid-area: filter;
      margin-top: 20px;
@@ -206,10 +214,10 @@
      #hebergement{
      grid-area: hebergement;
      }
-     .title-hebergement{
-     margin-left: 40px;
+     .titre-hebergement{
+     margin-left: 50px;
      margin-bottom: 30px;
-     width: 100%;                                                
+     width: 100%;                                               
      }
      .hebergement-container{
      background-color: #f2f2f2;
@@ -227,15 +235,15 @@
      transform: scale(1.2);
      }
      .article-hebergement img {
-     width: 240px;
+     width: 245px;
      height: 115px;
      border-radius: 17px 17px 0px 0px;
      padding: 5px 5px 5px 5px;
      object-fit: cover;
      }
-     .article-item{
+    .article-item{
      margin: 10px;
-     width: 240px;
+     width: 245px;
      border-radius: 17px;
      background-color: white;
      box-shadow: 1px 1px 15px darkgrey;
