@@ -47,12 +47,9 @@
       margin-left: 3.5%;
      }
 
-     li {
-          display: list-item;
-          text-align: -webkit-match-parent;
-      }
 
-     /* CONTAINER DES LIENS DE LA NAV */
+
+/* CONTAINER DES LIENS DE LA NAV */
      
      .navbar__link{
      display: flex;
@@ -64,6 +61,9 @@
      font-size: 1.3rem;
      padding-top: 20px;
      }
+
+   
+     
      
      /* TOUT LES LIENS DE LA NAV  */
      
@@ -408,114 +408,4 @@
      font-weight: 700;
      }
                                                   
-                             /* ===============================INTEGRATION MOBILE======================== */
-                                                  
-     @media(max-width:708px){
-          .site-content {
-          grid-template-columns: 1fr;
-          grid-template-areas:
-          "header"
-          "bouton"
-          "filter"
-          "aside"
-          "hebergement"
-          "activite"
-          "footer";
-          }
-          .navbar__link{
-          flex-wrap: wrap-reverse;
-          font-weight: 400;
-          border-bottom: solid 3px #f2f2f2;
-          padding-bottom: 10px;
-          }
-          .link {
-          width: 50%;
-          }
-          .link__inscription{
-          margin-bottom: 35px;
-          }
-          .navbar__img{
-          margin-top: 30px;
-          margin-left: 5%;
-          }
-          .aside__container{
-          border-radius: 0;
-          margin: 0;
-          }
-/* TITTRE SECTION FILTRE */
-          .filter-title{
-          margin-left: 10px;
-          }
-/* TOUT LES ICONES  */
-          .bouton-recherche span {
-          height: 55px;
-          width: 50px;
-          }
-/* FORMULAIRE DE RECHERCHE */
-/* INPUT */
-          .rechercher {
-          height: 55px;
-          padding-left: 11px;
-          font-weight: bold;
-          font-size: 1.3rem;
-          border: solid 1px #f2f2f2;                                        
-          }                                               
-/* ICONE PIN */
-/* CONTAINER */
-          .pin-icone{
-          text-align: center;
-          background-color: #f2f2f2;
-          border-radius: 17px 0px 0px 17px;
-          padding-right: 40px;
-          }
-/* ICONE */
-          .pin-icone i {
-          text-align: center;
-          padding-top: 19px;
-          padding-left: 19px;
-          }
-/* ICONE LOUPE */
-/* CONTAINER */
-          .loupe{
-          margin-left: 272px;
-          position: absolute;
-          text-align: center;
-          background-color: #0065fc;
-          border-radius: 17px;
-          }
-/* ICONE */
-          .loupe i {
-          color: white;
-          text-align: center;
-          padding-top: 19px;
-          }
-          .loupe{
-          visibility: visible;
-          }
-/* INPUT SOUMETTRE  */
-          .submit{
-          visibility: hidden;
-          }
-          .list-content{
-          display: flex;
-          flex-direction: column;
-          align-items: baseline;
-          justify-content: space-between;
-          margin-left: 5%;
-          margin-top: 50px;
-          margin-right: 5%;
-          margin-bottom: 50px;
-          }
-          .hebergement-container{
-          background-color:white;
-          }
-          .filter-title {
-          width: 100%;
-          }
-          .bouton-recherche{
-          justify-content: center;
-          align-items: center;
-          }
-                                                  
-     }
-                                                  
+ 
