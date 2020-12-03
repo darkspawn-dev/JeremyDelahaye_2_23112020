@@ -1,57 +1,54 @@
-
 * {
      padding: 0;
      margin: 0;
      box-sizing: border-box;
      font-family: Raleway, sans-serif;
      color: black;
-     }
+}
 
 html {
-         font-size: 16px;
-     }
-                    /* ================TOUT LES LIENS DU SITE =========== */
-     a {
-          transition: color 0.3s;
-          text-decoration: none;
-     }
-                    /* ================RESET DE TOUTES LES LI DU SITES =========== */
-     li {
-          list-style-type: none;
-     }
-                                                  
+     font-size: 16px;
+}
 
-                                                  
-.site-content{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-areas: "header header header header "
-                     "bouton bouton bouton bouton"
-                     "filter filter filter filter"
-                     "hebergement hebergement aside aside"
-                     "activite activite activite activite"
-                     "footer footer footer footer";
-     }
+/* liens du site */
+a {
+     transition: color 0.3s;
+     text-decoration: none;
+}
+/* reset lien */
+li {
+     list-style-type: none;
+}
 
-  
+
+
+.site-content {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-areas: "header header header header "
+          "bouton bouton bouton bouton"
+          "filter filter filter filter"
+          "hebergement hebergement aside aside"
+          "activite activite activite activite"
+          "footer footer footer footer";
+}
+
+
 .header {
      grid-area: header;
-     }
-     
-     .navbar__container{
+}
+
+.navbar-container {
      display: flex;
-     }
-     
-     .navbar__img{
-      margin-top: 50px;
-      margin-left: 3.5%;
-     }
+}
+
+.navbar-img {
+     margin-top: 50px;
+     margin-left: 3.5%;
+}
 
 
-
-
-     
-.navbar__link{
+.navbar-link {
      display: flex;
      justify-content: flex-end;
      align-items: center;
@@ -60,48 +57,43 @@ grid-template-areas: "header header header header "
      font-weight: 400;
      font-size: 1.3rem;
      padding-top: 20px;
-     }
+}
 
-   
-     
-     
+.navbar-link a {
+     padding: 20px 45px 45px 20px;
+}
 
-     
-.navbar__link a{
-     padding: 20px 45px 45px 20px; 
-     }
-
-.titre__container{
+.titre-container {
      margin-top: 20px;
      margin-left: 3.5%;
-     }
+}
 
-.titre__principal{
-          font-size: 1.3rem;
-     }
+.titre-principal {
+     font-size: 1.3rem;
+}
 
-.titre__secondaire{
+.titre-secondaire {
      margin-top: 10px;
      font-size: 1rem;
      font-weight: 400;
-     }
+}
 
-.link__inscription a{
+.link-inscription a {
      font-weight: 500;
      color: #0065fc;
-     }
+}
 
-.link__inscription a:hover{
+.link-inscription a:hover {
      font-weight: bolder;
-     }
+}
 
-.link a:hover{
+.link a:hover {
      border-top: solid 2px #0065fc;
      font-weight: bolder;
      color: #0065fc;
-     }
-    
+}
 
+/* Recherche */ 
 .bouton-recherche {
      grid-area: bouton;
      display: flex;
@@ -110,21 +102,21 @@ grid-template-areas: "header header header header "
      margin-right: 3.5%;
      margin-top: 20px;
      align-items: center;
-     }
+}
 
-.pin-icone{
+.pin-icone {
      height: 50px;
      width: 50px;
      border-radius: 17px 0px 0px 17px;
      background-color: #f2f2f2;
      text-align: center;
      padding-top: 15px;
-     }
+}
 
 .recherche input {
      height: 50px;
      border: none;
-     }
+}
 
 .rechercher {
      height: 55px;
@@ -132,41 +124,41 @@ grid-template-areas: "header header header header "
      font-weight: bold;
      font-size: 1.2rem;
      border: solid 1px #0065fc;
-     }
+}
 
-.submit{
+.submit {
      color: aliceblue;
      font-size: 1.2rem;
      font-weight: bold;
      background-color: #0065fc;
      border-radius: 0px 17px 17px 0px;
      width: 135px;
-     }
+}
 
-.loupe{
+.loupe {
      visibility: hidden;
-     }
+}
 
 
 .filter {
      grid-area: filter;
      margin-top: 20px;
      margin-left: 3.5%;
-     }
+}
 
-.filter-container{
+.filter-container {
      border: none;
      display: flex;
      align-items: center;
      flex-wrap: wrap;
-     }
+}
 
-.filter-item{
+.filter-item {
      position: relative;
      display: flex;
      margin: 15px;
      align-items: center;
-     }
+}
 
 .filter-item span {
      position: absolute;
@@ -175,67 +167,67 @@ grid-template-areas: "header header header header "
      border-radius: 50%;
      height: 50px;
      width: 50px;
-     }
+}
 
-.filter-item form input{
+.filter-item form input {
      height: 50px;
-     border:  solid 2px #f2f2f2;
+     border: solid 2px #f2f2f2;
      border-radius: 30px;
      text-align: justify;
      padding-left: 54px;
      font-weight: bold;
-     }
+}
 
-.filter-item i{
+.filter-item i {
      color: #0065fc;
      font-weight: bold;
      text-align: center center;
      font-size: 1.2rem;
-     }
+}
 
-/* SURVOL FILTRES */
+/* filtres survol */
 .filter-item-formulaire input:hover {
      background-color: #deebff;
      box-shadow: 6px 6px 12px #f2f2f2;
      cursor: pointer;
-     }
-     
+}
 
-.info-container{
+
+.info-container {
      align-items: center;
      justify-content: flex-start;
      display: flex;
      margin-top: 20px;
-     }
+}
 
 /* Information icone */
 .info-container i {
-     color:   #0065FC;
+     color: #0065FC;
      border: 2px solid #F2F2F2;
      border-radius: 50px;
      height: 30px;
      width: 30px;
      padding: 4px 7px 7px 10px;
-     margin-bottom: 50px ;
-     }
+     margin-bottom: 50px;
+}
 
 .info {
      padding: 5px;
      font-size: 0.9rem;
      margin-bottom: 49px;
-     }
+}
 
-#hebergement{
+#hebergement {
      grid-area: hebergement;
-     }
+}
 
-.titre-hebergement{
+.titre-hebergement {
      margin-left: 50px;
      margin-bottom: 30px;
-     width: 100%;                                               
-     }
+     width: 100%;
+}
 
-.hebergement-container{
+.hebergement-container {
      background-color: #f2f2f2;
      border-radius: 17px;
      margin-left: 6.5%;
@@ -246,11 +238,11 @@ grid-template-areas: "header header header header "
      flex-wrap: wrap;
      width: 880px;
      height: 625px;
-     }
+}
 
 .article-hebergement img:hover {
      transform: scale(1.2);
-     }
+}
 
 .article-hebergement img {
      width: 245px;
@@ -258,52 +250,50 @@ grid-template-areas: "header header header header "
      border-radius: 17px 17px 0px 0px;
      padding: 5px 5px 5px 5px;
      object-fit: cover;
-     }
+}
 
-.article-item{
+.article-item {
      margin: 10px;
      width: 245px;
      border-radius: 17px;
      background-color: white;
      box-shadow: 1px 1px 15px darkgrey;
      overflow: hidden
-     }
+}
 
 .info-hebergement {
      font-size: 0.7rem;
      padding-left: 15px;
-     } 
+}
 
-.tarif-hebergement{
+.tarif-hebergement {
      font-size: 0.8rem;
      font-weight: 300;
-     }
+}
 
-.afficher-plus{
+.afficher-plus {
      width: 100%;
      margin-top: 40px;
      margin-left: 35px;
      margin-bottom: 40px;
      font-weight: 900;
      font-size: 0.9rem;
-     }   
+}
 
 .note {
      display: flex;
      padding-bottom: 10px;
-     }
+}
 
-.prix-aside{
+.prix-aside {
      margin-bottom: 40px;
-     }
+}
 
 .blue-star i {
-     color: #0065fc; 
-     }
+     color: #0065fc;
+}
 
 .fa-star {
      font-size: 0.7rem;
-     color:#f2f2f2;
-     }
-
-     
+     color: #f2f2f2;
+}
