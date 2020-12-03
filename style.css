@@ -42,9 +42,8 @@ li {
      display: flex;
 }
 
-.navbar-img {
-     margin-top: 50px;
-     margin-left: 3.5%;
+.img {
+     width: 200px
 }
 
 
