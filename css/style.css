@@ -284,24 +284,30 @@ h2 {
      color:#f2f2f2;
      }
 
-.cards-activites-content {
-     display:flex;
+.activites-container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width:80%;
+     max-width: width 1350px;
+     justify-content: center;
+     
 }
 
-.activite-cards {
- 
+.cards {
      background-color: white;
      max-width: 300px;
      height: fit-content;
-     margin-right: auto;
+     margin-left: 45px;
      border-radius: 17px;
      margin-bottom: 20px;
      box-shadow: 1px 1px 15px darkgrey;
      transition: 0.3s;
+
 }
 
 
-.activity-thumb-port {
+.thumb-port {
      object-fit: cover;
      height: 400px;
      width: 300px;
@@ -309,7 +315,39 @@ h2 {
      border-radius: 17px 17px 0px 0px;
 }
 
-.activity-thumb-pomegues {
+.thumb-pomegues {
+     object-fit: cover;
+     height: 180px;
+     width: 300px;
+     padding: 5px;
+     border-radius: 17px 17px 0px 0px;
+     
+}
+
+.thumb-frioul {
+     object-fit: cover;
+     height: 180px;
+     width: 300px;
+     padding: 5px;
+     border-radius: 17px 17px 0px 0px;
+     
+}
+.thumb-calanques {
+     object-fit: cover;
+     height: 400px;
+     width: 300px;
+     padding: 5px;
+     border-radius: 17px 17px 0px 0px;
+
+}
+.thumb-notre-dame {
+     object-fit: cover;
+     height: 180px;
+     width: 300px;
+     padding: 5px;
+     border-radius: 17px 17px 0px 0px;
+}
+.thumb-longchamp {
      object-fit: cover;
      height: 180px;
      width: 300px;
@@ -317,31 +355,12 @@ h2 {
      border-radius: 17px 17px 0px 0px;
 }
 
-.activity-thumb-frioul {
-     object-fit: cover;
-     height: 180px;
-     width: 300px;
-     padding: 5px;
-     border-radius: 17px 17px 0px 0px;
-}
-.activity-thumb-calanques {
-     object-fit: cover;
-     height: 400px;
-     width: 300px;
-     padding: 5px;
-     border-radius: 17px 17px 0px 0px;
-}
-.activity-thumb-notre-dame {
-     object-fit: cover;
-     height: 180px;
-     width: 300px;
-     padding: 5px;
-     border-radius: 17px 17px 0px 0px;
-}
-.activity-thumb-longchamp {
-     object-fit: cover;
-     height: 180px;
-     width: 300px;
-     padding: 5px;
-     border-radius: 17px 17px 0px 0px;
-}
+footer {
+     padding-top: 45px;
+     padding-bottom: 50px;
+ }
+
+ .footer_body {
+     display: flex;
+     justify-content: space-around;
+ }
