@@ -317,7 +317,6 @@ h2 {
 
 .thumb-pomegues {
      object-fit: cover;
-     order:2;
      height: 180px;
      width: 300px;
      padding: 5px;
@@ -327,7 +326,6 @@ h2 {
 
 .thumb-frioul {
      object-fit: cover;
-     order:4;
      height: 180px;
      width: 300px;
      padding: 5px;
@@ -336,7 +334,6 @@ h2 {
 }
 .thumb-calanques {
      object-fit: cover;
-     order:3;
      height: 400px;
      width: 300px;
      padding: 5px;
@@ -373,4 +370,6 @@ footer {
  .footer {
      display: flex;
      justify-content: space-around;
+     background-color: #f2f2f2;
+     height: 220px;
  }
