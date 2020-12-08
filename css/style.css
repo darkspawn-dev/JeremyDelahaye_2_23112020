@@ -286,11 +286,11 @@ h2 {
 
 .activites-container {
      display: flex;
-     flex-direction: row;
      flex-wrap: wrap;
+     justify-content: center;
      width:80%;
      max-width: width 1350px;
-     justify-content: center;
+
      
 }
 
@@ -317,6 +317,7 @@ h2 {
 
 .thumb-pomegues {
      object-fit: cover;
+     order:2;
      height: 180px;
      width: 300px;
      padding: 5px;
@@ -326,6 +327,7 @@ h2 {
 
 .thumb-frioul {
      object-fit: cover;
+     order:4;
      height: 180px;
      width: 300px;
      padding: 5px;
@@ -334,6 +336,7 @@ h2 {
 }
 .thumb-calanques {
      object-fit: cover;
+     order:3;
      height: 400px;
      width: 300px;
      padding: 5px;
@@ -354,13 +357,20 @@ h2 {
      padding: 5px;
      border-radius: 17px 17px 0px 0px;
 }
+.card-activites {
+     margin-left: 20px;
+     margin-bottom: 10px;
+     
+}
+
+/* footer */
 
 footer {
      padding-top: 45px;
      padding-bottom: 50px;
  }
 
- .footer_body {
+ .footer {
      display: flex;
      justify-content: space-around;
  }
