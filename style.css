@@ -1,0 +1,479 @@
+
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: Raleway, sans-serif;
+     color: black;
+     }
+
+html {
+     font-size: 16px;
+     }
+          
+a {
+     transition: color 0.3s;
+     text-decoration: none;
+}
+
+a:hover {
+     color:#0065fc;
+}
+                   
+ul, li {
+     list-style-type: none;
+     }
+                                                  
+  
+
+     
+.navbar{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 35px;
+
+     }
+     
+.logonavbar {
+     height: 30px;
+     margin-left: 50px;
+    
+}
+.navbar ul {
+     display: flex;
+     justify-content: center;
+}
+
+
+.navbar ul li a{
+     padding: 30px 45px 45px 30px; 
+
+     }
+
+.titre-container{
+     margin-top: 20px;
+     margin-left: 50px;
+
+     }
+
+h1 {
+
+     font-size: 15px;
+     }
+
+h2 {
+     margin-top: 10px;
+     font-size: 1rem;
+     font-weight: 400;
+
+     }
+
+.link-inscription a{
+     font-weight: 500;
+     color: #0065fc;
+     }
+
+.link-inscription a:hover{
+     font-weight: bolder;
+     }
+
+.link a:hover{
+     border-top: solid 2px #0065fc;
+     font-weight: bolder;
+     color: #0065fc;
+     }
+    
+
+.bouton-recherche {
+     grid-area: bouton;
+     display: flex;
+     height: 65px;
+     margin-left:50px;
+     margin-right: 3.5%;
+     margin-top: 20px;
+     align-items: center;
+     }
+
+.pin-icone{
+     height: 50px;
+     width: 50px;
+     border-radius: 17px 0px 0px 17px;
+     background-color: #f2f2f2;
+     text-align: center;
+     padding-top: 15px;
+
+     }
+
+.recherche input {
+     height: 50px;
+     border: none;
+
+     
+     }
+
+.rechercher {
+     height: 55px;
+     font-weight: bold;
+     font-size: 1.2rem;
+     border: solid 1px #0065fc;
+     }
+
+.submit{
+     color: aliceblue;
+     font-size: 1.2rem;
+     font-weight: bold;
+     background-color: #0065fc;
+     border-radius: 0px 17px 17px 0px;
+     width: 130px;
+     margin: -5px;
+
+     }
+
+
+/* filtres */ 
+.filter {
+     grid-area: filter;
+     margin-top: 20px;
+     margin-left: 3.5%;
+     }
+
+.filter-container{
+     border: none;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     }
+
+.filter-item{
+     position: relative;
+     display: flex;
+     margin: 15px;
+     align-items: center;
+     }
+
+.filter-item span {
+     position: absolute;
+     background-color: #deebff;
+     padding: 16px;
+     border-radius: 50%;
+     height: 50px;
+     width: 50px;
+     }
+
+.filter-item form input{
+     height: 50px;
+     border:  solid 2px #f2f2f2;
+     border-radius: 30px;
+     text-align: justify;
+     padding-left: 54px;
+     font-weight: bold;
+     }
+
+.filter-item i{
+     color: #0065fc;
+     font-weight: bold;
+     text-align: center center;
+     font-size: 1.2rem;
+     }
+
+/* SURVOL FILTRES */
+.filter-item-formulaire input:hover {
+     background-color: #deebff;
+     box-shadow: 6px 6px 12px #f2f2f2;
+     cursor: pointer;
+     }
+     
+
+.info-container{
+     align-items: center;
+     justify-content: flex-start;
+     display: flex;
+     margin-top: 20px;
+     }
+
+/* Information icone */
+.info-container i {
+     color:   #0065FC;
+     border: 2px solid #F2F2F2;
+     border-radius: 50px;
+     height: 30px;
+     width: 30px;
+     padding: 4px 7px 7px 10px;
+     margin-bottom: 50px ;
+     }
+
+.info {
+     padding: 5px;
+     font-size: 0.9rem;
+     margin-bottom: 49px;
+     }
+/* aside */
+
+
+.pop {
+     display: flex;
+     justify-content: stretch;
+     margin-bottom: 30px;
+
+ }
+ .pop aside {
+     order: 2;
+     flex-basis: 30%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #F2F2F2;
+     border-radius: 17px;
+     padding: 15px;
+     margin-left: 50px;
+     
+ }
+ 
+.pop aside .title {
+     width: 100%;
+     flex-basis: 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 25px;
+     margin: 15px 15px 30px;
+ }
+
+.pop aside .card-populaire {
+     display: flex;
+     padding: 5px;
+     background-color: #fff;
+     border-radius: 8px;
+     width: 90%;
+     margin: 15px;
+ }
+
+
+
+.pop aside .card-populaire .card-body {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 65%;
+     padding: 10px;
+ }
+ 
+.pop aside .card-populaire .card-body h3 {
+     font-size: 16px;
+     margin-top: -5px;
+ }
+.pop aside .card-populaire .card-body .rating {
+     align-self: stretch;
+     color: #0065fc; 
+ }
+ .pop aside .card-populaire .card-image {
+     height: 8em;
+     width: 40%;
+     overflow: hidden;    
+ }
+ 
+.pop aside .card-populaire .card-image img {
+     height: 100%;
+     width: 100%;
+     border-radius: 8px 0 0 8px;  
+     object-fit: cover;
+     object-position: center;
+ }
+
+
+ 
+
+     /* hébergement */
+#hebergement{
+     grid-area: hebergement;
+     }
+
+.titre-hebergement{
+     margin-left: 50px;
+     margin-bottom: 30px;
+     width: 100%;                                               
+     }
+
+.hebergement-container{
+     background-color: #f2f2f2;
+     border-radius: 17px;
+     margin-left: 40px;
+     justify-content: center;
+     padding-top: 20px;
+     padding-bottom: 35px;
+     display: flex;
+     flex-wrap: wrap;
+     width: 880px;
+     height: 625px;
+     }
+
+.article-hebergement img:hover {
+     transform: scale(1.2);
+     }
+
+.article-hebergement img {
+     width: 245px;
+     height: 115px;
+     border-radius: 17px 17px 0px 0px;
+     padding: 5px 5px 5px 5px;
+     object-fit: cover;
+     }
+
+.article-item{
+     margin: 10px;
+     width: 245px;
+     border-radius: 17px;
+     background-color: white;
+     box-shadow: 1px 1px 15px darkgrey;
+     overflow: hidden
+     }
+
+.info-hebergement {
+     font-size: 0.7rem;
+     padding-left: 15px;
+     } 
+
+.tarif-hebergement{
+     font-size: 0.8rem;
+     font-weight: 300;
+     }
+
+.afficher-plus{
+     width: 100%;
+     margin-top: 40px;
+     margin-left: 35px;
+     margin-bottom: 40px;
+     font-weight: 900;
+     font-size: 0.9rem;
+     }   
+
+.note {
+     display: flex;
+     padding-bottom: 10px;
+     }
+
+.prix-aside{
+     margin-bottom: 40px;
+     }
+
+.blue-star i {
+     color: #0065fc; 
+     }
+
+.fa-star {
+     font-size: 0.7rem;
+     color:#f2f2f2;
+     }
+
+
+/* activites */
+
+
+.activites-container {
+     display: flex;
+     flex-flow: wrap;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     width: 80%;
+
+     height: 490px;   
+     align-content: center;
+}
+
+.cards {
+     background-color: white;
+     max-width: 300px;
+     height: auto;
+     margin-left: 40px;
+     border-radius: 17px;
+
+     transition: 0.3s;
+
+}
+
+
+.thumb-port {
+     object-fit: cover;
+     height: 400px;
+     width: 300px;
+     padding: 5px;
+     border-radius: 17px 17px 0px 0px;
+}
+
+.thumb-pomegues {
+     object-fit: cover;
+     height: 180px;
+     width: 300px;
+     padding: 5px;
+     border-radius: 17px 17px 0px 0px;
+     
+}
+
+.thumb-frioul {
+     object-fit: cover;
+     height: 180px;
+     width: 300px;
+     padding: 5px;
+     border-radius: 17px 17px 0px 0px;
+     
+}
+.thumb-calanques {
+     object-fit: cover;
+     height: 400px;
+     width: 300px;
+     padding: 5px;
+     border-radius: 17px 17px 0px 0px;
+
+}
+.thumb-notre-dame {
+     object-fit: cover;
+     height: 180px;
+     width: 300px;
+     padding: 5px;
+     border-radius: 17px 17px 0px 0px;
+}
+.thumb-longchamp {
+     object-fit: cover;
+     height: 180px;
+     width: 300px;
+     padding: 5px;
+     border-radius: 17px 17px 0px 0px;
+}
+.card-activites {
+     margin-left: 20px;
+     margin-bottom: 10px;
+     
+}
+
+/* footer */
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 30px;
+
+}
+.footer-section {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      align-content: center;
+}
+.footer-section h5{
+	font-size: 16px;
+	font-weight: bold;
+}
+.footer-section ul {
+    margin-top: 15px;
+    margin: 0;
+    padding: 0;
+    
+}
+.footer-section ul {
+    display: block; 
+
+}
