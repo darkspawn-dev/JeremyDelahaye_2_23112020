@@ -8,16 +8,20 @@
      }
 
 html {
-         font-size: 16px;
+     font-size: 16px;
      }
-                    /* ================TOUT LES LIENS DU SITE =========== */
-     a {
-          transition: color 0.3s;
-          text-decoration: none;
-     }
-                    /* ================RESET DE TOUTES LES LI DU SITES =========== */
-     li {
-          list-style-type: none;
+          
+a {
+     transition: color 0.3s;
+     text-decoration: none;
+}
+
+a:hover {
+     color:#0065fc;
+}
+                   
+ul, li {
+     list-style-type: none;
      }
                                                   
   
@@ -37,12 +41,13 @@ html {
 }
 .navbar ul {
      display: flex;
-
+     justify-content: center;
 }
 
 
 .navbar ul li a{
      padding: 30px 45px 45px 30px; 
+
      }
 
 .titre-container{
@@ -96,17 +101,18 @@ h2 {
      background-color: #f2f2f2;
      text-align: center;
      padding-top: 15px;
+
      }
 
 .recherche input {
      height: 50px;
      border: none;
+
      
      }
 
 .rechercher {
      height: 55px;
-     padding-left: 11px;
      font-weight: bold;
      font-size: 1.2rem;
      border: solid 1px #0065fc;
@@ -118,7 +124,9 @@ h2 {
      font-weight: bold;
      background-color: #0065fc;
      border-radius: 0px 17px 17px 0px;
-     width: 135px;
+     width: 130px;
+     margin: -5px;
+
      }
 
 
@@ -199,7 +207,83 @@ h2 {
      font-size: 0.9rem;
      margin-bottom: 49px;
      }
+/* aside */
 
+
+.pop {
+     display: flex;
+     justify-content: stretch;
+     margin-bottom: 30px;
+
+ }
+ .pop aside {
+     order: 2;
+     flex-basis: 30%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #F2F2F2;
+     border-radius: 17px;
+     padding: 15px;
+     margin-left: 50px;
+     
+ }
+ 
+.pop aside .title {
+     width: 100%;
+     flex-basis: 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 25px;
+     margin: 15px 15px 30px;
+ }
+
+.pop aside .card-populaire {
+     display: flex;
+     padding: 5px;
+     background-color: #fff;
+     border-radius: 8px;
+     width: 90%;
+     margin: 15px;
+ }
+
+
+
+.pop aside .card-populaire .card-body {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 65%;
+     padding: 10px;
+ }
+ 
+.pop aside .card-populaire .card-body h3 {
+     font-size: 16px;
+     margin-top: -5px;
+ }
+.pop aside .card-populaire .card-body .rating {
+     align-self: stretch;
+     color: #0065fc; 
+ }
+ .pop aside .card-populaire .card-image {
+     height: 8em;
+     width: 40%;
+     overflow: hidden;    
+ }
+ 
+.pop aside .card-populaire .card-image img {
+     height: 100%;
+     width: 100%;
+     border-radius: 8px 0 0 8px;  
+     object-fit: cover;
+     object-position: center;
+ }
+
+
+ 
+
+     /* hébergement */
 #hebergement{
      grid-area: hebergement;
      }
@@ -213,7 +297,7 @@ h2 {
 .hebergement-container{
      background-color: #f2f2f2;
      border-radius: 17px;
-     margin-left: 6.5%;
+     margin-left: 40px;
      justify-content: center;
      padding-top: 20px;
      padding-bottom: 35px;
@@ -281,27 +365,29 @@ h2 {
      color:#f2f2f2;
      }
 
+
+/* activites */
+
+
 .activites-container {
      display: flex;
      flex-flow: wrap;
      flex-direction: column;
      justify-content: center;
      align-items: flex-start;
-     width:80%;
-     max-width: width 1350px;
-     height: 490px;
+     width: 80%;
 
-     
+     height: 490px;   
+     align-content: center;
 }
 
 .cards {
      background-color: white;
      max-width: 300px;
-     height: fit-content;
+     height: auto;
      margin-left: 40px;
      border-radius: 17px;
-     margin-bottom: 10px;
-     box-shadow: 1px 1px 15px darkgrey;
+
      transition: 0.3s;
 
 }
@@ -363,13 +449,31 @@ h2 {
 /* footer */
 
 footer {
-     padding-top: 45px;
-     padding-bottom: 50px;
- }
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 
- .footer {
-     display: flex;
-     justify-content: space-around;
-     background-color: #f2f2f2;
-     height: 220px;
- }
+    padding: 30px;
+
+}
+.footer-section {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      align-content: center;
+}
+.footer-section h5{
+	font-size: 16px;
+	font-weight: bold;
+}
+.footer-section ul {
+    margin-top: 15px;
+    margin: 0;
+    padding: 0;
+    
+}
+.footer-section ul {
+    display: block; 
+
+}
