@@ -214,9 +214,8 @@ h2 {
      display: flex;
      justify-content: left;
      margin-bottom: 30px;
-     
-
  }
+
  .pop aside {
      order: 2;
      flex-basis: 30%;
@@ -226,8 +225,7 @@ h2 {
      background-color: #F2F2F2;
      border-radius: 17px;
      padding: 15px;
-     margin-left: 50px;
-     
+     margin-left: 50px; 
  }
  
 .pop aside .title {
@@ -249,8 +247,6 @@ h2 {
      margin: 15px;
  }
 
-
-
 .pop aside .card-populaire .card-body {
      display: flex;
      flex-direction: column;
@@ -258,6 +254,7 @@ h2 {
      width: 65%;
      padding: 10px;
  }
+
  
 .pop aside .card-populaire .card-body h3 {
      font-size: 16px;
@@ -272,7 +269,9 @@ h2 {
      width: 40%;
      overflow: hidden;    
  }
- 
+.card-image:hover {
+     transform: scale(1.2);
+}
 .pop aside .card-populaire .card-image img {
      height: 100%;
      width: 100%;
@@ -282,7 +281,6 @@ h2 {
  }
 
 
- 
 
      /* hébergement */
 #hebergement{
@@ -406,7 +404,6 @@ h2 {
      object-fit: cover;
      height: 180px;
      width: 300px;
- 
      border-radius: 17px 17px 0px 0px;
 }
 
@@ -414,14 +411,12 @@ h2 {
      object-fit: cover;
      height: 180px;
      width: 300px;
-
      border-radius: 17px 17px 0px 0px;
 }
 .thumb-calanques {
      object-fit: cover;
      height: 400px;
      width: 300px;
-
      border-radius: 17px 17px 0px 0px;
 
 }
@@ -441,10 +436,9 @@ h2 {
 }
 .card-activites {
      margin-left: 5px;
-     margin-bottom: 0px;
      padding-bottom: -10px;
-     
 }
+
 
 /* footer */
 
