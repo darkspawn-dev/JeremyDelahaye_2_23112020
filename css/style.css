@@ -41,7 +41,7 @@ ul, li {
 }
 .navbar ul {
      display: flex;
-     justify-content: center;
+     
 }
 
 
@@ -375,23 +375,20 @@ h2 {
      flex-direction: column;
      justify-content: center;
      align-items: flex-start;
-     width: 80%;
-
-     height: 490px;   
+     height: 500px;   
      align-content: center;
 }
 
 .cards {
      background-color: white;
-     max-width: 300px;
+     width: 300px;
      height: auto;
      margin-left: 40px;
      border-radius: 17px;
-
+     box-shadow: 5px 10px 10px 0px #f2f2f2;
      transition: 0.3s;
-
+     margin-block-end: 10px;
 }
-
 
 .thumb-port {
      object-fit: cover;
@@ -405,24 +402,22 @@ h2 {
      object-fit: cover;
      height: 180px;
      width: 300px;
-     padding: 5px;
+ 
      border-radius: 17px 17px 0px 0px;
-     
 }
 
 .thumb-frioul {
      object-fit: cover;
      height: 180px;
      width: 300px;
-     padding: 5px;
+
      border-radius: 17px 17px 0px 0px;
-     
 }
 .thumb-calanques {
      object-fit: cover;
      height: 400px;
      width: 300px;
-     padding: 5px;
+
      border-radius: 17px 17px 0px 0px;
 
 }
@@ -441,8 +436,9 @@ h2 {
      border-radius: 17px 17px 0px 0px;
 }
 .card-activites {
-     margin-left: 20px;
-     margin-bottom: 10px;
+     margin-left: 5px;
+     margin-bottom: 0px;
+     padding-bottom: -10px;
      
 }
 
@@ -453,27 +449,27 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
     padding: 30px;
 
 }
 .footer-section {
       display: flex;
       flex-direction: column;
-      flex: 1;
-      align-content: center;
+      flex: 1;  
 }
+
 .footer-section h5{
 	font-size: 16px;
-	font-weight: bold;
+     font-weight: bold;
+     margin-bottom: 10px;
 }
-.footer-section ul {
-    margin-top: 15px;
-    margin: 0;
-    padding: 0;
-    
-}
-.footer-section ul {
-    display: block; 
 
+.footer-section ul {
+    display: inline-block;
+
+}
+
+.footer-section .text {
+     margin-bottom: 15px;
+     
 }
