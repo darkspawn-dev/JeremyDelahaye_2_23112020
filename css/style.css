@@ -212,14 +212,15 @@ h2 {
 
 .pop {
      display: flex;
-     justify-content: stretch;
+     justify-content: left;
      margin-bottom: 30px;
+     
 
  }
  .pop aside {
      order: 2;
      flex-basis: 30%;
-     display: flex;
+     display: flex-end;
      flex-direction: column;
      align-items: center;
      background-color: #F2F2F2;
@@ -286,6 +287,7 @@ h2 {
      /* hébergement */
 #hebergement{
      grid-area: hebergement;
+
      }
 
 .titre-hebergement{
@@ -368,15 +370,17 @@ h2 {
 
 /* activites */
 
-
 .activites-container {
      display: flex;
      flex-flow: wrap;
      flex-direction: column;
      justify-content: center;
-     align-items: flex-start;
      height: 500px;   
-     align-content: center;
+     align-content: baseline;
+}
+
+.title {
+     margin-left: 50px;
 }
 
 .cards {
