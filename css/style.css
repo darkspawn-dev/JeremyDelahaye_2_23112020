@@ -23,20 +23,16 @@ a:hover {
                    
 ul, li {
      list-style-type: none;
-     }
-                                                  
-  
-
+}
      
 .navbar{
      display: flex;
      justify-content: space-between;
      margin-top: 35px;
-
-     }
+}
      
 .logonavbar {
-     height: 50px;
+     height: 60px;
      margin-left: 50px;
     
 }
@@ -94,9 +90,9 @@ h3 {
     
 
 .bouton-recherche {
-     grid-area: bouton;
+     grid-area: auto;
      display: flex;
-     height: 65px;
+     height: 50px;
      margin-left:50px;
      margin-right: 3.5%;
      margin-top: 20px;
@@ -115,18 +111,18 @@ h3 {
 
 .recherche input {
      height: 50px;
-     border: none;
+     border: solid 1px #f2f2f2;
      }
 
 input:focus {
      outline: 0;
+     
 }
 
 .rechercher {
-     height: 55px;
      font-weight: bold;
      font-size: 1.2rem;
-     border: solid 1px #0065fc;
+     margin-right: -5px;
      }
 
 .submit{
@@ -136,9 +132,8 @@ input:focus {
      background-color: #0065fc;
      border-radius: 0px 17px 17px 0px;
      width: 130px;
-     margin: -5px;
-
-     }
+     /*margin: -5px;*/
+}
 
 
 /* filtres */ 
@@ -174,7 +169,7 @@ input:focus {
 
 .filter-item form input{
      height: 50px;
-     border:  solid 2px #f2f2f2;
+     border: solid 2px #f2f2f2;
      border-radius: 30px;
      text-align: justify;
      padding-left: 54px;
@@ -202,8 +197,7 @@ input:focus {
 /* SURVOL FILTRES */
 .filter-item-formulaire input:hover {
      background-color: #0065FC;
-     background-size:cover;
-     
+     border-color: #0065FC ;
      }
      
 
@@ -223,7 +217,7 @@ input:focus {
      height: 30px;
      width: 30px;
      padding: 4px 7px 7px 10px;
-     margin-bottom: 50px ;
+     margin-bottom: 50px;
      }
 
 .info {
@@ -310,10 +304,6 @@ input:focus {
  }
 
      /* hébergement */
-#hebergement{
-     grid-area: hebergement;
-
-     }
 
 .titre-hebergement{
      margin-left: 50px;
@@ -478,6 +468,7 @@ footer {
     align-items: flex-start;
     padding: 30px;
     width: 1500px;
+    
 
 }
 .footer-section {
