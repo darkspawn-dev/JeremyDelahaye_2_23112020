@@ -14,6 +14,7 @@ html {
 a {
      transition: color 0.3s;
      text-decoration: none;
+     
 }
 
 a:hover {
@@ -35,19 +36,17 @@ ul, li {
      }
      
 .logonavbar {
-     height: 30px;
+     height: 50px;
      margin-left: 50px;
     
 }
 .navbar ul {
      display: flex;
-     
 }
 
 
 .navbar ul li a{
-     padding: 30px 45px 45px 30px; 
-
+     padding: 30px 45px 45px 30px;
      }
 
 .titre-container{
@@ -59,14 +58,24 @@ ul, li {
 h1 {
 
      font-size: 15px;
+     font-weight: bold;  
+     font-size: large;
      }
 
 h2 {
      margin-top: 10px;
      font-size: 1rem;
-     font-weight: 400;
+     font-weight: 700;
+}
+h2.titlepop {
 
-     }
+     margin-left: 15px;
+}
+h3 {
+     margin-top: 10px;
+     font-size: 1rem;
+     font-weight: 400;
+}
 
 .link-inscription a{
      font-weight: 500;
@@ -107,9 +116,11 @@ h2 {
 .recherche input {
      height: 50px;
      border: none;
-
-     
      }
+
+input:focus {
+     outline: 0;
+}
 
 .rechercher {
      height: 55px;
@@ -131,6 +142,7 @@ h2 {
 
 
 /* filtres */ 
+
 .filter {
      grid-area: filter;
      margin-top: 20px;
@@ -176,11 +188,22 @@ h2 {
      font-size: 1.2rem;
      }
 
+.fa-money-bill-wave{
+     margin-left: -3px;
+}
+
+.fa-child {
+     margin-left: 2px;
+}
+
+.fa-dog {
+     margin-left: -1px;
+}
 /* SURVOL FILTRES */
 .filter-item-formulaire input:hover {
-     background-color: #deebff;
-     box-shadow: 6px 6px 12px #f2f2f2;
-     cursor: pointer;
+     background-color: #0065FC;
+     background-size:cover;
+     
      }
      
 
@@ -214,8 +237,7 @@ h2 {
 
 .pop {
      display: flex;
-     justify-content: left;
-     margin-bottom: 30px;
+     width: 1600px;
  }
 
  .pop aside {
@@ -227,14 +249,14 @@ h2 {
      background-color: #F2F2F2;
      border-radius: 17px;
      padding: 15px;
-     margin-left: 50px; 
+     margin-left: 50px;
  }
  
 .pop aside .title {
      width: 100%;
      flex-basis: 0;
-     display: flex;
-     justify-content: space-between;
+     display: inline-flex;
+     justify-content: space-around;
      align-items: center;
      height: 25px;
      margin: 15px 15px 30px;
@@ -281,8 +303,11 @@ h2 {
      object-fit: cover;
      object-position: center;
  }
-
-
+ .fa-chart-line {
+     float: right;
+     margin-right: 20px;
+     
+ }
 
      /* hébergement */
 #hebergement{
@@ -345,7 +370,7 @@ h2 {
      margin-top: 40px;
      margin-left: 35px;
      margin-bottom: 40px;
-     font-weight: 900;
+     font-weight: 700;
      font-size: 0.9rem;
      }   
 
@@ -374,13 +399,16 @@ h2 {
      display: flex;
      flex-flow: wrap;
      flex-direction: column;
-     justify-content: center;
      height: 500px;   
-     align-content: baseline;
+     margin-top: 10px;
+     width: 1500px;
+     
 }
 
 .title {
      margin-left: 50px;
+     margin-top: 40px;
+     font-weight: 700;
 }
 
 .cards {
@@ -449,6 +477,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     padding: 30px;
+    width: 1500px;
 
 }
 .footer-section {
