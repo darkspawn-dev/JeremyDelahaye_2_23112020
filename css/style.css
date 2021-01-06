@@ -63,14 +63,16 @@ h2 {
      font-size: 1rem;
      font-weight: 700;
 }
-h2.titlepop {
 
-     margin-left: 15px;
-}
 h3 {
      margin-top: 10px;
+     font-size: 1.5rem;
+     font-weight: 700;
+}
+
+p {
      font-size: 1rem;
-     font-weight: 400;
+     margin-top: 10px;
 }
 
 .link-inscription a{
@@ -123,7 +125,7 @@ input:focus {
      font-weight: bold;
      font-size: 1.2rem;
      margin-right: -5px;
-     }
+}
 
 .submit{
      color: aliceblue;
@@ -142,21 +144,21 @@ input:focus {
      grid-area: filter;
      margin-top: 20px;
      margin-left: 3.5%;
-     }
+}
 
 .filter-container{
      border: none;
      display: flex;
      align-items: center;
      flex-wrap: wrap;
-     }
+}
 
 .filter-item{
      position: relative;
      display: flex;
      margin: 15px;
      align-items: center;
-     }
+}
 
 .filter-item span {
      position: absolute;
@@ -165,7 +167,7 @@ input:focus {
      border-radius: 50%;
      height: 50px;
      width: 50px;
-     }
+}
 
 .filter-item form input{
      height: 50px;
@@ -174,7 +176,7 @@ input:focus {
      text-align: justify;
      padding-left: 54px;
      font-weight: bold;
-     }
+}
 
 .filter-item i{
      color: #0065fc;
@@ -231,7 +233,7 @@ input:focus {
 
 .pop {
      display: flex;
-     width: 1600px;
+
  }
 
  .pop aside {
@@ -247,69 +249,71 @@ input:focus {
  }
  
 .pop aside .title {
-     width: 100%;
      flex-basis: 0;
      display: inline-flex;
      justify-content: space-around;
      align-items: center;
-     height: 25px;
-     margin: 15px 15px 30px;
  }
 
-.pop aside .card-populaire {
+.card-populaire {
      display: flex;
-     padding: 5px;
      background-color: #fff;
-     border-radius: 8px;
-     width: 90%;
+     border-radius: 17px;
+     width: 80%;
      margin: 15px;
+     box-shadow: 1px 1px 15px darkgrey;
+     padding: 5px 5px 5px 5px;
+     box-shadow: 1px 1px 15px darkgrey;
  }
 
-.pop aside .card-populaire .card-body {
+.card-populaire .card-body {
      display: flex;
      flex-direction: column;
      justify-content: space-between;
-     width: 65%;
-     padding: 10px;
+     padding: 15px;
  }
 
- 
-.pop aside .card-populaire .card-body h3 {
+.card-populaire .card-body h3 {
      font-size: 16px;
      margin-top: -5px;
  }
-.pop aside .card-populaire .card-body .rating {
+
+.card-populaire .card-body .rating {
      align-self: stretch;
      color: #0065fc; 
  }
- .pop aside .card-populaire .card-image {
+
+ .card-populaire .card-image {
      height: 8em;
      width: 40%;
-     overflow: hidden;    
+     overflow: hidden;
+  
  }
 .card-image:hover {
      transform: scale(1.2);
 }
-.pop aside .card-populaire .card-image img {
+.card-image img {
      height: 100%;
      width: 100%;
      border-radius: 8px 0 0 8px;  
      object-fit: cover;
-     object-position: center;
  }
  .fa-chart-line {
      float: right;
-     margin-right: 20px;
+     margin-right: 100px;
      
  }
-
+ .note-aside {
+     display: flex;
+     padding-top: 50px;
+}
      /* hébergement */
 
 .titre-hebergement{
      margin-left: 50px;
      margin-bottom: 30px;
      width: 100%;                                               
-     }
+}
 
 .hebergement-container{
      background-color: #f2f2f2;
@@ -322,11 +326,11 @@ input:focus {
      flex-wrap: wrap;
      width: 880px;
      height: 625px;
-     }
+}
 
 .article-hebergement img:hover {
      transform: scale(1.2);
-     }
+}
 
 .article-hebergement img {
      width: 245px;
@@ -334,7 +338,7 @@ input:focus {
      border-radius: 17px 17px 0px 0px;
      padding: 5px 5px 5px 5px;
      object-fit: cover;
-     }
+}
 
 .article-item{
      margin: 10px;
@@ -343,17 +347,18 @@ input:focus {
      background-color: white;
      box-shadow: 1px 1px 15px darkgrey;
      overflow: hidden
-     }
+}
 
 .info-hebergement {
      font-size: 0.7rem;
      padding-left: 15px;
-     } 
+} 
 
 .tarif-hebergement{
      font-size: 0.8rem;
      font-weight: 300;
-     }
+     padding-bottom: 10px;
+}
 
 .afficher-plus{
      width: 100%;
@@ -361,26 +366,26 @@ input:focus {
      margin-left: 35px;
      margin-bottom: 40px;
      font-weight: 700;
-     font-size: 0.9rem;
-     }   
+     font-size: 1rem;
+}   
 
 .note {
      display: flex;
      padding-bottom: 10px;
-     }
+}
 
 .prix-aside{
      margin-bottom: 40px;
-     }
+}
 
 .blue-star i {
      color: #0065fc; 
-     }
+}
 
 .fa-star {
      font-size: 0.7rem;
      color:#f2f2f2;
-     }
+}
 
 
 /* activites */
@@ -391,7 +396,8 @@ input:focus {
      flex-direction: column;
      height: 500px;   
      margin-top: 10px;
-     width: 1500px;
+     justify-content: center;
+     /*position: relative;*/
      
 }
 
@@ -408,10 +414,12 @@ input:focus {
      margin-left: 40px;
      border-radius: 17px;
      box-shadow: 5px 10px 10px 0px #f2f2f2;
-     transition: 0.3s;
-     margin-block-end: 10px;
+    /* transition: 0.3s;*/
+    margin-block-end: 10px;
 }
-
+.cards:hover {
+     transform: scale(1.2);
+}
 .thumb-port {
      object-fit: cover;
      height: 400px;
@@ -467,7 +475,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     padding: 30px;
-    width: 1500px;
+    /*width: 1500px;*/
     
 
 }
