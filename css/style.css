@@ -359,16 +359,14 @@ aside {
      flex-flow: wrap;
      flex-direction: column;
      height: 500px;   
-     justify-content: space-between;
-     padding-top: 20px;
-
 }
 
 .title {
      margin-left: 40px;
      margin-top: 40px;
-     
+     margin-bottom: 10px ;
 }
+
 h4 {
      text-align: center;
      padding-top: 2px;
@@ -397,6 +395,7 @@ h4 {
      height: 170px;
      width: 300px;
      border-radius: 17px 17px 0px 0px;
+     margin-bottom: 10px;
 }
 
 /* footer */
