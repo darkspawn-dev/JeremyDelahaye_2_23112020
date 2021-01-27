@@ -249,7 +249,7 @@ aside {
      flex-basis: 30%;
      margin-left: 2%;
      align-content: flex-start;
-;
+     justify-content: center;
 }
 
 .image-article-aside {
@@ -381,6 +381,7 @@ h4 {
      border-radius: 17px;
      box-shadow: 5px 10px 10px 0px #f2f2f2;
      padding-bottom: 10px;
+     object-fit: cover;
 }
 .cards:hover {
      transform: scale(1.2);
@@ -389,14 +390,14 @@ h4 {
 .thumb {
      object-fit: cover;
      height: 25em;
-     width: 18em;
+     width: 18.75em;
      border-radius: 17px 17px 0px 0px;
 }
 
 .thumb-mini {
      object-fit: cover;
      height: 10.625em;
-     width: 18em;
+     width: 18.75em;
      border-radius: 17px 17px 0px 0px;
      margin-bottom: 0.625em;
 }
