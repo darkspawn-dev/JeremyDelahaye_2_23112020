@@ -6,7 +6,9 @@
      font-family: Raleway, sans-serif;
      color: black;
 }
-
+body {
+     width :auto;
+}
 html {
      font-size: 16px;
 }
@@ -23,7 +25,10 @@ a:hover {
 ul, li {
      list-style-type: none;
 }
-     
+
+header {
+     margin-left: 40px;
+}
 .navbar{
      display: flex;
      justify-content: space-between;
@@ -31,8 +36,7 @@ ul, li {
 }
      
 .logonavbar {
-     height: 60px;
-     margin-left: 50px;  
+     height: 60px; 
 }
 
 .navbar ul {
@@ -45,22 +49,21 @@ ul, li {
 
 .titre-container{
      margin-top: 20px;
-     margin-left: 50px;
 }
 
 h1 {
-
      font-size: 15px;
      font-weight: bold;  
      font-size: large;
 }
 
-
-
 h3 {
      margin-top: 25px;
      font-size: 1.5rem;
      font-weight: 700;
+     margin-left: 20px;
+     margin-bottom: 30px;
+     width: 100%;
 }
 
 p {
@@ -83,19 +86,18 @@ p {
      color: #0065fc;    
 }
 
-.bouton-recherche {
-     grid-area: auto;
+/* rechercher */ 
+
+.recherche {  
      display: flex;
-     height: 50px;
-     margin-left:50px;
-     margin-right: 3.5%;
-     margin-top: 20px;
+     height: 3.125rem;
+     margin-top: 1.25rem;
      align-items: center;
 }
 
 .pin-icone{
-     height: 50px;
-     width: 50px;
+     height: 3.125rem;
+     width: 3.125rem;
      border-radius: 17px 0px 0px 17px;
      background-color: #f2f2f2;
      text-align: center;
@@ -131,9 +133,8 @@ input:focus {
 /* filtres */ 
 
 .filter {
-     grid-area: filter;
      margin-top: 20px;
-     margin-left: 3.5%;
+     margin-left: auto;
 }
 
 .filter-container{
@@ -142,6 +143,7 @@ input:focus {
      align-items: center;
      flex-wrap: wrap;
 }
+
 
 .filter-item{
      position: relative;
@@ -166,7 +168,7 @@ input:focus {
      text-align: justify;
      padding-left: 54px;
      font-weight: bold;
-     text-align: center;
+
 }
 
 .filter-item i{
@@ -231,12 +233,13 @@ input:focus {
 }
 
 
-.article-hebergement-aside img {
+.hebergement-aside img {
      width: 245px;
      height: 115px;
      border-radius: 17px 0px 0px 17px;
      padding: 5px 5px 5px 5px;
      object-fit: cover;
+
 }
 
 aside {
@@ -247,7 +250,7 @@ aside {
      flex-wrap: wrap;
      flex-basis: 30%;
      margin-left: 2%;
-     justify-content: center;
+     align-content: flex-start;
 }
 
 .image-article-aside {
@@ -271,6 +274,13 @@ aside {
      border-radius: 17px;
      margin: 15px;
      box-shadow: 1px 1px 15px darkgrey;
+     width: 70%;
+}
+
+.info-aside {
+     font-size: 0.7rem;
+     padding-left: 15px;
+     padding-top: 10px;
 }
 
  .fa-chart-line {
@@ -280,12 +290,6 @@ aside {
 
 
 /* hébergement */
-
-.titres {
-     margin-left: 20px;
-     margin-bottom: 30px;
-     width: 100%;                                               
-}
 
 .hebergement-container{
      background-color: #f2f2f2;
@@ -354,11 +358,12 @@ aside {
 
 /* activites */
 
-.activites-container {
+
+.activites {
      display: flex;
      flex-flow: wrap;
      flex-direction: column;
-     height: 500px;   
+     height: 31.25em;
 }
 
 .title {
@@ -366,18 +371,18 @@ aside {
      margin-top: 40px;
      margin-bottom: 10px ;
 }
-
 h4 {
-     text-align: center;
-     padding-top: 2px;
+     padding-top: 3px;
+     padding-left: 10px;
 }
 .cards {
      background-color: white;
-     width: 300px;
+     width: 18.75em;
      border-radius: 17px;
      box-shadow: 5px 10px 10px 0px #f2f2f2;
      padding-bottom: 10px;
      margin-left: 40px;
+     
 }
 .cards:hover {
      transform: scale(1.2);
@@ -385,15 +390,15 @@ h4 {
 
 .thumb {
      object-fit: cover;
-     height: 400px;
-     width: 300px;
+     height: 25em;
+     width: 18.75em;
      border-radius: 17px 17px 0px 0px;
 }
 
 .thumb-mini {
      object-fit: cover;
-     height: 170px;
-     width: 300px;
+     height: 10.625em;
+     width: 18.75em;
      border-radius: 17px 17px 0px 0px;
      margin-bottom: 10px;
 }
@@ -428,3 +433,5 @@ h5 {
      margin-bottom: 10px;
       
 }
+
+
