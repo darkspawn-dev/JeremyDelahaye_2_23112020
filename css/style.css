@@ -59,13 +59,15 @@ h1 {
 
 h3 {
      margin-top: 25px;
-     font-size: 1.5rem;
+     font-size: 24px;
      font-weight: 700;
      margin-left: 20px;
      margin-bottom: 30px;
      width: 100%;
 }
-
+h2 {
+     font-size: 16px;
+}
 p {
      font-size: 1rem;
      margin-top: 10px;
@@ -90,14 +92,14 @@ p {
 
 .recherche {  
      display: flex;
-     height: 3.125rem;
-     margin-top: 1.25rem;
+     height: 50px;
+     margin-top: 20px;
      align-items: center;
 }
 
 .pin-icone{
-     height: 3.125rem;
-     width: 3.125rem;
+     height: 50px;
+     width: 50px;
      border-radius: 17px 0px 0px 17px;
      background-color: #f2f2f2;
      text-align: center;
@@ -116,7 +118,7 @@ input:focus {
 
 .rechercher {
      font-weight: bold;
-     font-size: 1.2rem;
+     font-size: 20px;
      margin-right: -5px;
 }
 
@@ -203,7 +205,7 @@ input:focus {
      justify-content: flex-start;
      display: flex;
      margin-top: 20px;
-     }
+}
 
 /* Information icone */
 
@@ -211,18 +213,18 @@ input:focus {
      color:   #0065FC;
      border: 2px solid #F2F2F2;
      border-radius: 50px;
-     height: 1.875em;
-     width: 1.875em;
+     height: 30px;
+     width: 100%;
      padding: 4px 7px 7px 10px;
      margin-bottom: 50px;
-     }
+
+}
 
 .info {
      padding: 5px;
-     font-size: 0.9rem;
-     margin-bottom: 3.0625em;
-     }
-
+     font-size: 15px;
+     margin-bottom: 55px;
+}
 
 .main {
           display:flex;
@@ -233,13 +235,16 @@ input:focus {
 /* aside */
 
 .hebergement-aside img {
-     width: 15.3125em;
-     height: 7.1875em;
+     width: 40%;
+     height: 115px;
      border-radius: 17px 0px 0px 17px;
      padding: 5px 5px 5px 5px;
-     object-fit: cover;
+     object-fit:cover;
 }
-
+.hebergement-aside {
+     display: flex;
+     justify-content: center;
+}
 aside {
      order: 2;
      display: flex;
@@ -253,27 +258,37 @@ aside {
 }
 
 .image-article-aside {
-     height: 8em;
-     overflow: hidden;
+     height: 140px;
      width: 50%;
+     display: flex;
+     background-color: #fff;
+     border-radius: 17px;
+     margin: 15px;
+     box-shadow: 1px 1px 15px darkgrey;
+     width: 400px;
+     
 }
 
 .image-article-aside img {
      height: 100%;
+     object-fit: cover;
+     
 }
 
 .image-article-aside:hover {
      transform: scale(1.2);
 }
 
-.article-item-aside{
+/*.article-item-aside{
      display: flex;
      background-color: #fff;
      border-radius: 17px;
      margin: 15px;
      box-shadow: 1px 1px 15px darkgrey;
-     width: 70%;
-}
+     width: 400px;
+     margin-left: auto;
+     margin-right: auto;
+}*/
 
 .info-aside {
      font-size: 0.7rem;
@@ -282,7 +297,7 @@ aside {
 }
 
  .fa-chart-line {
-     margin-left: 100px;
+     margin-left: 200px;
  }
 
 
@@ -303,19 +318,20 @@ aside {
 }
 
 .article-hebergement img {
-     width: 15.3125em;
-     height: 7.1875em;
+     width: 280px;
+     height: 115px;
      border-radius: 17px 17px 0px 0px;
      padding: 5px 5px 5px 5px;
      object-fit: cover;
 }
 .article-hebergement {
      margin: 10px;
-     width: 15.3125em;
+     width: 280px;
      border-radius: 17px;
      background-color: white;
      box-shadow: 1px 1px 15px darkgrey;
-     overflow: hidden
+     overflow: hidden;
+     margin-left: 40px;
 }
 
 
@@ -361,23 +377,25 @@ aside {
      display: flex;
      flex-flow: wrap;
      flex-direction: column;
-     height: 31.25em;
-     justify-content: flex-start;
+     height: 500px;
+     justify-content: space-evenly;
      align-items: center;
+     
 }
 
 .title {
-     margin-left: 2.5em;
-     margin-top: 2.5em;
-     margin-bottom: 0.625em ;
+     margin-left: 40px;
+     margin-top: 40px;
+     width: auto;
+
 }
 h4 {
      padding-top: 3px;
-     padding-left: 0.625em;
+     padding-left: 10px;
 }
 .cards {
      background-color: white;
-     width: 18.75em;
+     width: 300px;
      border-radius: 17px;
      box-shadow: 5px 10px 10px 0px #f2f2f2;
      padding-bottom: 10px;
@@ -389,17 +407,17 @@ h4 {
 
 .thumb {
      object-fit: cover;
-     height: 25em;
-     width: 18.75em;
+     height: 400px;
+     width: 300px;
      border-radius: 17px 17px 0px 0px;
 }
 
 .thumb-mini {
      object-fit: cover;
-     height: 10.625em;
-     width: 18.75em;
+     height: 150px;
+     width: 300px;
      border-radius: 17px 17px 0px 0px;
-     margin-bottom: 0.625em;
+     margin-bottom: 10px;
 }
 
 /* footer */
@@ -409,7 +427,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 1.875em;
+    padding: 30px;
 }
 
 .footer-section {
@@ -423,7 +441,7 @@ footer {
 }
 
 .footer-section .text {
-     margin-bottom: 0.9375em;  
+     margin-bottom: 15px;  
 }
 
 h5 {
