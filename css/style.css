@@ -64,11 +64,12 @@ h3 {
   font-weight: 700;
   margin-left: 20px;
   margin-bottom: 30px;
-  width: 100%;
+  width: 90%;
 }
 h2 {
   font-size: 16px;
 }
+
 p {
   font-size: 1rem;
   margin-top: 10px;
@@ -130,8 +131,6 @@ input:focus {
   border-radius: 0px 17px 17px 0px;
   width: 130px;
 }
-
-
 
 /* filtres */
 
@@ -283,7 +282,6 @@ aside {
   display: flex;
   margin-left: 30%;
   align-items: center;
-
 }
 
 /* hébergement */
@@ -355,14 +353,16 @@ aside {
 
 /* activites */
 
-
 #activites {
   display: flex;
-  flex-flow: wrap;
 
-  height: 500px;
   justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .thumb {
@@ -378,6 +378,9 @@ aside {
   border-radius: 17px 17px 0px 0px;
   margin-bottom: 10px;
   align-self: flex-end;
+}
+h3.tile {
+  width: 50%;
 }
 
 /* footer */
