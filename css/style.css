@@ -475,7 +475,7 @@ h5 {
 }
 
 /* responsive */
-/* MOBILES */
+/* Mobiles */
 
 @media (max-width: 766px) {
   .container {
@@ -489,19 +489,27 @@ h5 {
 }
 
 .aside {
-  width: 100%;
   margin-bottom: 20px;
   border-radius: 0;
   padding: 0;
+  width: 100px;
+}
+.image-article-aside {
+  height: 140px;
+  width: auto;
+
+
+  border-radius: 17px;
+  margin: 15px;
+
 }
 
 .hebergement {
   display: flex;
   justify-content: center;
-  width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  width: 350px;
 }
 .article-hebergement {
   margin: 10px;
