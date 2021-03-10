@@ -504,19 +504,18 @@ h5 {
 
 }
 
-.hebergement {
+#hebergement {
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
-  width: 350px;
+  width: 100%;
+  background: none;
 }
 .article-hebergement {
   margin: 10px;
   width: 300px;
   border-radius: 17px;
-  background-color: white;
-  box-shadow: 1px 1px 15px darkgrey;
   overflow: hidden;
 }
 .article-hebergement img {
@@ -552,9 +551,6 @@ h5 {
   
 
   /* activites */
-  #activites {
-    
-  }
   .thumb{
     display: flex;
     width: 300px;
