@@ -464,7 +464,8 @@ nav {
 }
 .navbar ul {
   display: flex;
-  flex-wrap: wrap;
+  position: absolute;
+  align-self: flex-start;
 }
 
 .main {
@@ -506,6 +507,10 @@ aside {
 }
 
 /* rechercher */
+.search {
+  display: flex;
+  justify-items: center;
+}
 .btn2 {
       height: 50px;
       width: 50px;
@@ -547,6 +552,8 @@ aside {
   .footer__section {
     margin-bottom: 30px;
   }
-h5 {
-  padding-bottom: 10px;
+  .h5 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
 }
