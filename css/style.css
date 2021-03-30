@@ -388,17 +388,13 @@ aside {
   border-radius: 17px 17px 0px 0px;
   object-fit: cover;
 }
-.thumb-mini {
+.mini {
   object-fit: cover;
   height: 150px;
   width: 300px;
   border-radius: 17px 17px 0px 0px;
-  margin-bottom: 10px;
-  align-self: flex-end;
 }
-h3.tile {
-  width: 50%;
-}
+
 figure {
   box-shadow: 1px 1px 15px darkgrey;
   border-radius: 17px;
@@ -449,25 +445,37 @@ h5 {
   }
 
   /* menu */
-  ul,
-  li {
+.navbar ul li a {
+  padding: 30px 45px 45px 30px;
+}
+li a:hover {
+  border-bottom: solid 2px #0065fc;
+}
+li {
     display: flex;
-    float: right;
+    justify-content: left;
   }
 
-  /* filter */
-  nav {
-    position: relative;
+  .link :nth-child(3n + 1),
+  .link :nth-last-child(3) .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
   }
-  .navbar ul {
+  .logonavbar {
+    height: 50px;
+  }
+
+  /*.navbar ul {
     display: flex;
     position: absolute;
-    align-items: flex-end;
     flex-wrap: wrap-reverse;
     flex-direction: row-reverse;
-    padding-bottom: 500px;
+  }*/
+  .search {
+    display: flex;
+    justify-content: center;
   }
-
   .main {
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -507,7 +515,6 @@ h5 {
   }
 
   /* rechercher */
-
   .btn2 {
     height: 50px;
     width: 50px;
