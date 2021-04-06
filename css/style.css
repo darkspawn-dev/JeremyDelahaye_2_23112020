@@ -39,7 +39,7 @@ header {
 .logonavbar {
   height: 60px;
 }
-
+/* Navbar */ 
 .navbar ul {
   display: flex;
 }
@@ -76,12 +76,17 @@ p {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-
+/* Liens */ 
 .link a {
   font-weight: 500;
 }
 
 .link a:hover {
+  border-top: solid 2px #0065fc;
+  font-weight: bolder;
+  color: #0065fc;
+}
+.link1 a:hover {
   border-top: solid 2px #0065fc;
   font-weight: bolder;
   color: #0065fc;
@@ -128,7 +133,7 @@ input span {
   text-align: center;
 }
 
-.btn1 {
+.btn-localisation {
   height: 50px;
   width: 130px;
   border: none;
@@ -139,7 +144,7 @@ input span {
   cursor: pointer;
 }
 
-.btn2 {
+.btn-search {
   height: 50px;
   border: none;
   background-color: #0065fc;
@@ -371,9 +376,11 @@ aside {
 
 #activites {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  margin-left: 2.5em;
+  margin-right: 2.5em;
 }
 
 .col {
@@ -384,24 +391,25 @@ aside {
 
 .thumb {
   height: 400px;
-  width: 300px;
+  width: 280px;
   border-radius: 17px 17px 0px 0px;
   object-fit: cover;
 }
 .mini {
   object-fit: cover;
   height: 150px;
-  width: 300px;
+  width: 280px;
   border-radius: 17px 17px 0px 0px;
 }
 
 figure {
   box-shadow: 1px 1px 15px darkgrey;
   border-radius: 17px;
+  width: 280px;
 }
 figcaption {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   padding-bottom: 20px;
   padding-left: 10px;
 }
@@ -414,6 +422,8 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   padding: 30px;
+  margin-left: 2.5em;
+  margin-right: 2.5em;
 }
 
 .footer-section {
@@ -445,21 +455,22 @@ h5 {
   }
 
   /* menu */
-.navbar ul li a {
-  padding: 30px 45px 45px 30px;
+
+.link1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: relative;
 }
-li a:hover {
-  border-bottom: solid 2px #0065fc;
-}
+
 li {
     display: flex;
-    justify-content: left;
+
   }
 
   .link :nth-child(3n + 1),
   .link :nth-last-child(3) .navbar {
     display: flex;
-    justify-content: space-between;
     margin-top: 35px;
   }
   .logonavbar {
@@ -515,7 +526,7 @@ li {
   }
 
   /* rechercher */
-  .btn2 {
+  .btn-search {
     height: 50px;
     width: 50px;
     border: none;
@@ -526,7 +537,7 @@ li {
     cursor: pointer;
     display: block;
   }
-  .btn1 {
+  .btn-localisation {
     height: 100%;
     border: none;
     background-color: #0065fc;
@@ -538,21 +549,27 @@ li {
   }
 
   /* activites */
-
+  #activites {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
   figure {
     margin-bottom: 40px;
   }
   .thumb,
   .thumb-mini {
     display: flex;
-    width: 300px;
+    width: 280px;
     height: 150px;
   }
 
   /* footer */
   footer {
     flex-direction: column;
-    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
   .footer-section {
     margin-bottom: 30px;
