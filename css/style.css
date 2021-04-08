@@ -76,6 +76,7 @@ p {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
 /* Liens */ 
 .link a {
   font-weight: 500;
@@ -453,56 +454,75 @@ h5 {
     padding: 0;
     margin: 0;
   }
+  header {
+    margin-left: 20px;
+  }
 
   /* menu */
-
+nav
 .link1 {
   position: absolute;
   top: 0;
   right: 0;
-  max-width: relative;
 }
 
 li {
     display: flex;
-
   }
 
-  .link :nth-child(3n + 1),
-  .link :nth-last-child(3) .navbar {
-    display: flex;
-    margin-top: 35px;
+.navbar .link a:hover {
+    border-bottom: solid 2px #0065fc;
+    font-weight: bolder;
+    color: #0065fc;
   }
+  
+
   .logonavbar {
-    height: 50px;
+    height: auto;
+    width: 50%;
   }
 
-  /*.navbar ul {
+  .navbar {
     display: flex;
-    position: absolute;
-    flex-wrap: wrap-reverse;
-    flex-direction: row-reverse;
-  }*/
-  .search {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    margin-top: 35px;
+    flex-direction: column;
+    justify-content: space-between;
   }
+.filter {
+  margin-left: 20px;
+}
+
+.info-container {
+  margin-right: 20px;
+}
   .main {
     flex-direction: column-reverse;
     justify-content: space-between;
     padding: 0;
     margin: 0;
   }
+
   /* aside */
   .image-article-aside {
     height: 140px;
-    width: auto;
+    width: 320px;
     border-radius: 17px;
   }
   aside {
     margin: 0;
     border-radius: 0;
   }
+  .fa-chart-line {
+    display: flex;
+    margin-left: 30%;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
   /* hébergement */
   #hebergement {
     display: flex;
@@ -533,7 +553,7 @@ li {
     background-color: #0065fc;
     color: #fff;
     font-weight: 600;
-    border-radius: 17px 17px 17px 17px;
+    border-radius: 0 17px 17px 0;
     cursor: pointer;
     display: block;
   }
