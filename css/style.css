@@ -106,7 +106,6 @@ input {
   align-items: center;
   font-weight: bold;
   font-size: 20px;
-  resize: 200px;
 }
 
 input span {
@@ -466,14 +465,14 @@ nav
 
 li {
     display: flex;
+    
   }
 
-.navbar .link a:hover {
+.link a:hover {
     border-bottom: solid 2px #0065fc;
     font-weight: bolder;
     color: #0065fc;
   }
-  
 
   .logonavbar {
     height: auto;
