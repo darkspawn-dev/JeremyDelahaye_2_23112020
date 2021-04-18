@@ -72,7 +72,7 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -213,10 +213,11 @@ input span {
 
 /* hover filtres */
 
-.filter-item-formulaire input:hover {
-  background-color: #0065fc;
-  border-color: #0065fc;
+
+input:hover {
+ background-color: lightskyblue;
 }
+
 
 .info-container {
   align-items: center;
@@ -262,6 +263,9 @@ input span {
   display: flex;
   justify-content: center;
 }
+.hebergement-aside:hover {
+  transform: scale(1.2);
+}
 aside {
   order: 2;
   display: flex;
@@ -290,10 +294,6 @@ aside {
   object-fit: cover;
 }
 
-.image-article-aside img:hover {
-  transform: scale(1.2);
-}
-
 .info-aside {
   font-size: 0.7rem;
   padding-left: 15px;
@@ -318,7 +318,7 @@ aside {
   flex-basis: 70%;
 }
 
-.article-hebergement img:hover {
+.article-hebergement:hover {
   transform: scale(1.2);
 }
 
@@ -401,7 +401,9 @@ aside {
   width: 280px;
   border-radius: 17px 17px 0px 0px;
 }
-
+figure:hover {
+  transform: scale(1.2);
+}
 figure {
   box-shadow: 1px 1px 15px darkgrey;
   border-radius: 17px;
@@ -410,8 +412,7 @@ figure {
 figcaption {
   font-weight: bold;
   font-size: 18px;
-  padding-bottom: 20px;
-  padding-left: 10px;
+  padding: 5px 0px 5px 15px;
 }
 
 /* footer */
@@ -465,13 +466,12 @@ nav
 
 li {
     display: flex;
-    
   }
 
-.link a:hover {
-    border-bottom: solid 2px #0065fc;
-    font-weight: bolder;
-    color: #0065fc;
+.link a {
+  display: flex;
+  height: 60px;
+  border-bottom: solid 2px #0065fc;
   }
 
   .logonavbar {
