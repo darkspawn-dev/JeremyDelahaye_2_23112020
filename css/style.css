@@ -459,7 +459,15 @@ h5 {
     top: 0;
     right: 0;
   }
-
+  p {
+    font-size: 17px;
+  }
+  .link1:focus {
+    color: #0065fc;
+  }
+  a:active {
+    color: #0065fc;
+  }
   li {
     display: flex;
   }
